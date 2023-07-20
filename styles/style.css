@@ -1,4 +1,3 @@
-/* ---------- Universal / Default Section Start ---------- */
 * {
     margin: 0;
     padding: 0;
@@ -30,43 +29,40 @@
   }
   
   h3 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
   }
   
   h5 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 45px;
     color: #534c64;
   }
   
   h6 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 45px;
     color: #534c64;
   }
   
   p {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 30px;
     color: #534c64;
   }
-  /* ---------- Universal / Default Section End ---------- */
   
   /* ---------- Header Section Start ---------- */
+
+  /* Nav Bar Start */
   nav {
     padding: 25px 0;
     box-shadow: 0px 0px 7px -4px;
   }
   
-  .nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+
   
   .logo {
     display: flex;
@@ -75,12 +71,18 @@
   }
   
   .logo h2 {
-    font-size: 45px;
+    font-size: 2.8rem;
   }
   
   .logo h2 span,
   .footer-logo h2 span {
     color: var(--primary-color);
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .nav-bar ul {
@@ -96,7 +98,7 @@
   .nav-bar ul li a,
   .nav-bar ul p {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #3c354f;
   }
@@ -111,6 +113,10 @@
   .nav-bar ul p .fa-youtube {
     color: #f61c0d;
   }
+
+  /* Nav Bar End */
+
+  /* Banner Section start */
   
   .main-banner {
     background-image: url(./images/group14.png);
@@ -132,21 +138,22 @@
   
   .banner-content {
     padding: 98px 100px 98px 0;
+    background-image: url("/images/group14.png");
   }
   
   .banner-content h2 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 500;
     text-transform: uppercase;
   }
   
   .banner-content h1 {
-    font-size: 95px;
+    font-size: 5.2rem;
     font-weight: 800;
   }
   
   .banner-content h6 {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 500;
   }
   
@@ -163,7 +170,7 @@
   }
   
   .btn {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
     padding: 20px 30px;
     border: none;
@@ -181,6 +188,7 @@
     background-color: #4ec5f7;
   }
   
+  /* ---------- Banner Section End ------------ */
   /* ---------- Header Section End ---------- */
   
   /* ---------- We Are Gamer Section Start ---------- */
@@ -335,15 +343,17 @@
   /* ---------- Play Games Section End ---------- */
   
   /* ---------- Careers Section Start ---------- */
-  .careers {
-    background-color: var(--primary-color);
-    color: #ffffff;
-    padding: 100px 0;
-  }
+
   
   .careers-content,
   .careers-image {
     width: 50%;
+  }
+
+  .careers {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 100px 0;
   }
   
   .careers-section,
@@ -382,7 +392,7 @@
   
   /* ---------- Careers Section End ---------- */
   
-  /* ---------- 9 Button Section Start ---------- */
+  /* ---------- Button Section Start ---------- */
   .nine-button {
     background-color: rgb(255, 66, 165, 0.03);
   }
@@ -402,7 +412,7 @@
     padding: 0px 14px;
     border: 2px solid #ffffff;
     border-radius: 48px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     background-color: #ffffff;
     transition: 0.5s ease;
@@ -412,7 +422,7 @@
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
   }
-  /* ---------- 9 Button Section End ---------- */
+  /* ---------- Button Section End ---------- */
   
   /* ---------- Footer Section Start ---------- */
   footer {
@@ -450,7 +460,7 @@
   .footer-area > ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 600;
   }
   
@@ -465,7 +475,7 @@
   .footer-icon > ul li a {
     text-decoration: none;
     color: white;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
   }
   
@@ -481,7 +491,7 @@
   .policy-menu > ul li a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
   }
   
@@ -494,15 +504,15 @@
   
   .footer-area .copyright-text p {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     text-align: center;
   }
   /* ---------- Footer Section End ---------- */
   
-  /* ---------- Breakpoint / Media Query / Responsive Section Start ---------- */
-  /* ---------- Responsive Max Width 991.98px Start ---------- */
-  @media only screen and (max-width: 991.98px) {
+ 
+  /* ---------- Responsive Max Width 991px Start ---------- */
+  @media only screen and (max-width: 991px) {
     nav {
       box-shadow: 0 0 0 0;
     }
@@ -600,7 +610,7 @@
     .btn-bottom {
       row-gap: 30px;
       padding: 2px 6px;
-      font-size: 14px;
+      font-size: 0.9rem;
     }
   
     .copyright-text {
@@ -611,16 +621,16 @@
       padding-bottom: 30px;
     }
   }
-  /* ---------- Responsive Max Width 991.98px End ---------- */
+  /* ---------- Responsive Max Width 991 End ---------- */
   
-  /* ---------- Responsive Max Width 767.98px Start ---------- */
-  @media only screen and (max-width: 767.98px) {
+  /* ---------- Responsive Max Width 767px Start ---------- */
+  @media only screen and (max-width: 767px) {
     .container {
       padding: 0 20px;
     }
   
     h3 {
-      font-size: 36px;
+      font-size: 2.2rem;
     }
   
     .banner-content {
@@ -628,7 +638,7 @@
     }
   
     .banner-content h1 {
-      font-size: 60px;
+      font-size: 3.8rem;
     }
   
     .banner-content h2 {
@@ -636,7 +646,7 @@
     }
   
     .banner-content h6 {
-      font-size: 15px;
+      font-size: 1rem;
     }
   
     .online-game-card {
@@ -657,12 +667,12 @@
   
     .careers-content-left h6,
     .careers-content-right h6 {
-      font-size: 12px;
+      font-size: 0.9rem;
     }
   
     .btn-1,
     .btn-2 {
-      font-size: 12px;
+      font-size: 0.9rem;
       padding: 10px 15px;
       border-radius: 48px;
     }
@@ -693,14 +703,13 @@
       padding: 30px;
     }
   }
-  /* ---------- Responsive Max Width 767.98px End ---------- */
+  /* ---------- Responsive Max Width 767 End ---------- */
   
-  /* ---------- Responsive Max Width 576.98px Start ---------- */
-  @media only screen and (max-width: 576.98px) {
+  /* ---------- Responsive Max Width 576 Start ---------- */
+  @media only screen and (max-width: 576px) {
     .btn-bottom {
-      font-size: 9px;
+      font-size: 0.8rem;
     }
   }
   /* ---------- Responsive Max Width 576.98px End ---------- */
   
-  /* ---------- Breakpoint / Media Query / Responsive Section End ---------- */
